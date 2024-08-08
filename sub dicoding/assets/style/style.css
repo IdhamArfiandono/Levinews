@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: inline;
+}
+
+h1,
+h2,
+h3 {
+  color: #5e1675;
+  font-family: "Playfair Display", "Quicksand", sans-serif;
+}
+
+nav {
+  background-color: #fec7b4;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #5e1675;
+  text-decoration: none;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.jumbotron {
+  font-size: 15px;
+  padding: 10px;
+  background-color: #fec7b4;
+  text-align: center;
+  color: white;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+#home h1 {
+  text-align: center;
+}
+#home p {
+  text-align: justify;
+}
+
+aside {
+  flex: 1;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile img {
+  width: 200px;
+}
+
+.profile section {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #fec7b4;
+
+  padding: 20px;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+input[type="submit"] {
+  background-color: #fec7b4;
+  color: #5e1675;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+}
+input[type="submit"]:hover {
+  background-color: #ff4000;
+}
+
+footer {
+  padding: 20px;
+  color: #5e1675;
+  background-color: #fec7b4;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+}
